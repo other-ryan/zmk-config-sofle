@@ -56,7 +56,7 @@ layers:
   - LEFT ALT
   - LEFT GUI
   - {t: RETURN, h: LOW}
-  - {t: SPACE, h: BAS}
+  - {t: SPACE, h: RAI}
   - BAS
   - RCTRL
   - RALT
@@ -81,7 +81,6 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - UP ARROW
   - {t: ▽, type: trans}
   - Sft+{
@@ -91,12 +90,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+.
   - {t: ▽, type: trans}
+  - Sft+.
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
   - Sft+}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -142,7 +142,6 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - UP ARROW
   - {t: ▽, type: trans}
   - Sft+{
@@ -152,12 +151,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+.
   - {t: ▽, type: trans}
+  - Sft+.
   - LEFT ARROW
   - DOWN ARROW
   - RIGHT ARROW
   - Sft+}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -178,7 +178,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
