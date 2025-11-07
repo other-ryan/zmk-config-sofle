@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
     keymap {
@@ -46,11 +47,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans          &trans      &trans        &trans         &trans         &trans                           &trans         &trans            &trans            &trans               &trans     &trans
-&studio_unlock  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3                     &trans         &kp UP_ARROW      &trans            &kp LS(LEFT_BRACE)   &trans     &trans
-&trans          &trans      &trans        &trans         &trans         &kp LS(PERIOD)                   &kp LEFT_ARROW &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp LS(RIGHT_BRACE)  &trans     &trans
-&trans          &trans      &trans        &kp LS(MINUS)  &kp LS(EQUAL)  &kp MINUS       &none    &trans  &trans  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans
-                            &none         &none          &none          &none           &none    &none   &none   &none             &none             &none
+&trans          &trans           &trans           &trans           &trans         &trans                           &trans          &trans            &trans            &trans               &trans             &trans
+&studio_unlock  &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3                     &trans          &kp UP_ARROW      &trans            &kp LS(LEFT_BRACE)   &trans             &trans
+&trans          &trans           &trans           &trans           &trans         &kp LS(PERIOD)                   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp LS(RIGHT_BRACE)  &trans             &trans
+&trans          &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp LS(MINUS)    &kp LS(EQUAL)  &kp MINUS       &none    &trans  &trans          &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp LEFT_BRACKET     &kp RIGHT_BRACKET  &trans
+                                 &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none          &none           &none    &none   &none           &none             &none             &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -59,11 +60,11 @@
         raise_layer {
             display-name = "RAI";
             bindings = <
-&trans          &trans      &trans        &trans         &trans         &trans                           &trans         &trans            &trans            &trans               &trans     &trans
-&studio_unlock  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3                     &trans         &kp UP_ARROW      &trans            &kp LS(LEFT_BRACE)   &trans     &trans
-&trans          &trans      &trans        &trans         &trans         &kp LS(PERIOD)                   &kp LEFT_ARROW &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp LS(RIGHT_BRACE)  &trans     &trans
-&trans          &trans      &trans        &kp LS(MINUS)  &kp LS(EQUAL)  &kp MINUS       &none    &trans  &trans  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans
-                            &none         &none          &none          &none           &none    &none   &none   &none             &none             &none
+&trans          &trans           &trans           &trans         &trans         &trans                           &trans          &trans            &trans            &trans               &trans             &trans
+&studio_unlock  &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3                     &trans          &kp UP_ARROW      &trans            &kp LS(LEFT_BRACE)   &trans             &trans
+&trans          &trans           &trans           &trans         &trans         &kp LS(PERIOD)                   &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW   &kp LS(RIGHT_BRACE)  &trans             &trans
+&trans          &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &kp LS(MINUS)  &kp LS(EQUAL)  &kp MINUS       &none    &trans  &trans          &kp LS(NUMBER_9)  &kp LS(NUMBER_0)  &kp LEFT_BRACKET     &kp RIGHT_BRACKET  &trans
+                                 &none            &none          &none          &none           &none    &none   &none           &none             &none             &none
             >;
 
             sensor-bindings =
