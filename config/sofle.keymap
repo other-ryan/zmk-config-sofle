@@ -58,11 +58,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans          &trans      &trans        &trans        &trans        &trans                              &trans    &trans    &trans  &trans     &trans  &trans
-&studio_unlock  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                        &kp LBKT  &kp RBKT  &trans  &trans     &trans  &trans
-&trans          &trans      &trans        &trans        &kp MINUS     &kp LS(MINUS)                       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans          &trans      &trans        &trans        &kp EQUAL     &kp LS(EQUAL)  &trans    &mkp LCLK  &trans    &trans    &trans  &trans     &trans  &trans
-                            &trans        &trans        &trans        &trans         &trans    &trans     &trans    &trans    &trans  &trans
+&bt BT_CLR  &trans  &trans        &trans        &trans        &trans                              &trans    &trans    &trans  &trans     &trans  &trans
+&bt BT_NXT  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                        &kp LBKT  &kp RBKT  &trans  &trans     &trans  &trans
+&trans      &trans  &trans        &trans        &kp MINUS     &kp LS(MINUS)                       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans      &trans  &trans        &trans        &kp EQUAL     &kp LS(EQUAL)  &trans    &mkp LCLK  &trans    &trans    &trans  &trans     &trans  &trans
+                    &trans        &trans        &trans        &trans         &trans    &trans     &trans    &trans    &trans  &trans
             >;
 
             sensor-bindings =
@@ -73,11 +73,11 @@
         raise_layer {
             display-name = "RAI";
             bindings = <
-&trans          &trans      &trans        &trans        &trans        &trans                              &trans    &trans    &trans  &trans     &trans  &trans
-&studio_unlock  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                        &kp LBKT  &kp RBKT  &trans  &trans     &trans  &trans
-&trans          &trans      &trans        &trans        &kp MINUS     &kp LS(MINUS)                       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans          &trans      &trans        &trans        &kp EQUAL     &kp LS(EQUAL)  &trans    &mkp LCLK  &trans    &trans    &trans  &trans     &trans  &trans
-                            &trans        &trans        &trans        &trans         &trans    &trans     &trans    &trans    &trans  &trans
+&bt BT_CLR  &trans  &trans        &trans        &trans        &trans                              &trans    &trans    &trans  &trans     &trans  &trans
+&bt BT_NXT  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                        &kp LBKT  &kp RBKT  &trans  &trans     &trans  &trans
+&trans      &trans  &trans        &trans        &kp MINUS     &kp LS(MINUS)                       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans      &trans  &trans        &trans        &kp EQUAL     &kp LS(EQUAL)  &trans    &mkp LCLK  &trans    &trans    &trans  &trans     &trans  &trans
+                    &trans        &trans        &trans        &trans         &trans    &trans     &trans    &trans    &trans  &trans
             >;
 
             sensor-bindings =
@@ -90,11 +90,11 @@
         special {
             display-name = "SPE";
             bindings = <
-&kp RS(GRAVE)  &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(N4)  &kp RS(N5)                    &kp RS(N6)  &kp RS(N7)      &kp RS(N8)      &kp RS(N9)  &kp RS(N0)       &kp BACKSPACE
-&trans         &trans      &trans      &trans      &trans      &trans                        &trans      &trans          &kp UP_ARROW    &kp UP      &trans           &trans
-&trans         &trans      &trans      &trans      &trans      &trans                        &trans      &kp LEFT_ARROW  &kp LEFT        &kp RIGHT   &kp RIGHT_ARROW  &trans
-&trans         &trans      &trans      &trans      &trans      &trans      &trans    &trans  &trans      &trans          &kp DOWN_ARROW  &kp DOWN    &trans           &trans
-                           &trans      &trans      &trans      &trans      &trans    &trans  &trans      &trans          &trans          &trans
+&kp RS(GRAVE)   &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(N4)  &kp RS(N5)                    &kp RS(N6)  &kp RS(N7)      &kp RS(N8)      &kp RS(N9)  &kp RS(N0)       &kp BACKSPACE
+&trans          &trans      &trans      &trans      &trans      &trans                        &trans      &trans          &kp UP_ARROW    &kp UP      &trans           &trans
+&trans          &trans      &trans      &trans      &trans      &trans                        &trans      &kp LEFT_ARROW  &kp LEFT        &kp RIGHT   &kp RIGHT_ARROW  &trans
+&studio_unlock  &trans      &trans      &trans      &trans      &trans      &trans    &trans  &trans      &trans          &kp DOWN_ARROW  &kp DOWN    &trans           &trans
+                            &trans      &trans      &trans      &trans      &trans    &trans  &trans      &trans          &trans          &trans
             >;
 
             label = "SPE";
