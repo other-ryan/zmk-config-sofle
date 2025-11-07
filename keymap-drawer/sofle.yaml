@@ -99,7 +99,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - RGB TOG
+  - '&bl BL_TOG'
   - RGB EFF
   - Sft+-
   - Sft+=
