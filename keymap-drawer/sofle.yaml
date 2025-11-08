@@ -57,8 +57,8 @@ layers:
   - LEFT GUI
   - {t: RETURN, h: LOW}
   - {t: SPACE, h: RAI}
-  - LEFT GUI
   - BACKSPACE
+  - LEFT GUI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   LOW:
@@ -167,8 +167,8 @@ layers:
   - Sft+=
   - {t: ▽, type: trans}
   - '&mkp LCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '['
+  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
