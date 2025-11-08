@@ -51,15 +51,15 @@ layers:
   - .
   - /
   - SPE
-  - {t: ▽, type: trans}
   - LEFT CONTROL
   - LEFT ALT
   - LEFT GUI
   - {t: RETURN, h: LOW}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: SPACE, h: RAI}
   - BACKSPACE
   - LEFT GUI
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   LOW:
   - BT CLR
@@ -115,8 +115,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
