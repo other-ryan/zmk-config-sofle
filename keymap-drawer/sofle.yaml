@@ -60,7 +60,7 @@ layers:
   - {t: SPACE, h: low}
   - BACKSPACE
   - RIGHT GUI
-  - {t: ▽, type: trans}
+  - RIGHT ALT
   low:
   - BT CLR
   - {t: ▽, type: trans}
