@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  BAS:
+  base:
   - '`'
   - '1'
   - '2'
@@ -29,7 +29,7 @@ layers:
   - A
   - S
   - D
-  - {t: F, h: RAI}
+  - {t: F, h: low}
   - G
   - H
   - J
@@ -50,18 +50,18 @@ layers:
   - ','
   - .
   - /
-  - SPE
-  - {t: ▽, type: trans}
+  - special
   - LEFT CONTROL
   - LEFT ALT
   - LEFT GUI
-  - {t: RETURN, h: LOW}
-  - {t: SPACE, h: RAI}
-  - LEFT GUI
+  - {t: RETURN, h: low}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: SPACE, h: low}
   - BACKSPACE
+  - RIGHT GUI
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  LOW:
+  low:
   - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -76,73 +76,12 @@ layers:
   - {t: ▽, type: trans}
   - BT NXT
   - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - '['
-  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - Sft+-
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '='
-  - Sft+=
-  - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  RAI:
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT NXT
-  - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - '['
-  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -167,6 +106,8 @@ layers:
   - Sft+=
   - {t: ▽, type: trans}
   - '&mkp LCLK'
+  - '['
+  - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -181,9 +122,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  SPE:
+  special:
   - Sft+`
   - Sft+1
   - Sft+2

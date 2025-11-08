@@ -27,7 +27,8 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "BAS";
+            display-name = "base";
+            label = "base";
 
             // ------------------------------------------------------------------------------------------------------------
             // |  `    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -37,18 +38,19 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE      &kp N1  &kp N2  &kp N3            &kp N4        &kp N5                                          &kp N6        &kp N7         &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB        &kp Q   &kp W   &kp E             &kp R         &kp T                                           &kp Y         &kp U          &kp I      &kp O    &kp P     &kp BACKSLASH
-&mt LCTRL ESC  &kp A   &kp S   &kp D             &lt 2 F       &kp G                                           &kp H         &kp J          &kp K      &kp L    &kp SEMI  &kp APOS
-&kp LSHFT      &kp Z   &kp X   &kp C             &kp V         &kp B         &kp C_MUTE      &kp C_PLAY_PAUSE  &kp N         &kp M          &kp COMMA  &kp DOT  &kp FSLH  &mo 3
-                       &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 RETURN    &lt 2 SPACE       &kp LEFT_GUI  &kp BACKSPACE  &trans     &trans
+&kp GRAVE      &kp N1  &kp N2            &kp N3         &kp N4       &kp N5                                         &kp N6        &kp N7         &kp N8         &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB        &kp Q   &kp W             &kp E          &kp R        &kp T                                          &kp Y         &kp U          &kp I          &kp O    &kp P     &kp BACKSLASH
+&mt LCTRL ESC  &kp A   &kp S             &kp D          &lt 1 F      &kp G                                          &kp H         &kp J          &kp K          &kp L    &kp SEMI  &kp APOS
+&kp LSHFT      &kp Z   &kp X             &kp C          &kp V        &kp B        &kp C_MUTE      &kp C_PLAY_PAUSE  &kp N         &kp M          &kp COMMA      &kp DOT  &kp FSLH  &mo 2
+                       &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 RETURN &trans          &trans            &lt 1 SPACE   &kp BACKSPACE  &kp RIGHT_GUI  &trans   
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&scroll_sensor>;
         };
 
         lower_layer {
-            display-name = "LOW";
+            display-name = "lower";
+            label = "low";
 
             // ------------------------------------------------------------------------------------------------------------
             // | `     |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
@@ -59,9 +61,9 @@
 
             bindings = <
 &bt BT_CLR  &trans  &trans        &trans        &trans        &trans                              &trans    &trans    &trans  &trans     &trans  &trans
-&bt BT_NXT  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                        &kp LBKT  &kp RBKT  &trans  &trans     &trans  &trans
+&bt BT_NXT  &trans  &trans        &trans        &trans        &trans                        &trans    &trans    &trans  &trans     &trans  &trans
 &trans      &trans  &trans        &trans        &kp MINUS     &kp LS(MINUS)                       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans      &trans  &trans        &trans        &kp EQUAL     &kp LS(EQUAL)  &trans    &mkp LCLK  &trans    &trans    &trans  &trans     &trans  &trans
+&trans      &trans  &trans        &trans        &kp EQUAL     &kp LS(EQUAL)  &trans    &mkp LCLK  &kp LBKT  &kp RBKT  &trans  &trans     &trans  &trans
                     &trans        &trans        &trans        &trans         &trans    &trans     &trans    &trans    &trans  &trans
             >;
 
@@ -70,25 +72,9 @@
                 <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
-        raise_layer {
-            display-name = "RAI";
-            bindings = <
-&bt BT_CLR  &trans  &trans        &trans        &trans        &trans                              &trans    &trans    &trans  &trans     &trans  &trans
-&bt BT_NXT  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                        &kp LBKT  &kp RBKT  &trans  &trans     &trans  &trans
-&trans      &trans  &trans        &trans        &kp MINUS     &kp LS(MINUS)                       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans      &trans  &trans        &trans        &kp EQUAL     &kp LS(EQUAL)  &trans    &mkp LCLK  &trans    &trans    &trans  &trans     &trans  &trans
-                    &trans        &trans        &trans        &trans         &trans    &trans     &trans    &trans    &trans  &trans
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>;
-
-            label = "RAI";
-        };
-
         special {
-            display-name = "SPE";
+            display-name = "special";
+            label = "special";
             bindings = <
 &kp RS(GRAVE)   &kp RS(N1)  &kp RS(N2)  &kp RS(N3)  &kp RS(N4)  &kp RS(N5)                    &kp RS(N6)  &kp RS(N7)      &kp RS(N8)      &kp RS(N9)  &kp RS(N0)       &kp BACKSPACE
 &trans          &trans      &trans      &trans      &trans      &trans                        &trans      &trans          &kp UP_ARROW    &kp UP      &trans           &trans
@@ -96,8 +82,6 @@
 &studio_unlock  &trans      &trans      &trans      &trans      &trans      &trans    &trans  &trans      &trans          &kp DOWN_ARROW  &kp DOWN    &trans           &trans
                             &trans      &trans      &trans      &trans      &trans    &trans  &trans      &trans          &trans          &trans
             >;
-
-            label = "SPE";
         };
     };
 };
